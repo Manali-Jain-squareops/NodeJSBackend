@@ -1,0 +1,10 @@
+version: 0.2
+env:
+  parameter-store:
+    MONGO_URL: "/Manali/MONGO_URL"
+
+phases:
+  build:
+    commands:
+      - sed -i 's/localhost/'$MONGO_URL'/' app.js
+  
