@@ -1,4 +1,4 @@
 #!/bin/bash
 cd NODEJS-CODE
 npm install
-npm start &
+pm2 start --name backend npm -- start
