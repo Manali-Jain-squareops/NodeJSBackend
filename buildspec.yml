@@ -8,3 +8,6 @@ phases:
     commands:
       - sed -i 's/localhost/'$MONGO_URL'/' app.js
   
+artifacts:
+  files:
+    - '**/*'
