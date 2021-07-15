@@ -6,7 +6,7 @@ env:
 phases:
   build:
     commands:
-      - sed -i 's/localhost/'$MONGO_URL'/' app.js
+      - sed -i 's/localhost/'$MONGO_URL'/' /Backend/app.js
   
 artifacts:
   files:
