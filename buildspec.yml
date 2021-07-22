@@ -7,7 +7,7 @@ phases:
   build:
     commands:
       - npm install
-      - sed -i 's/localhost/'$MONGO_URL'/' Backend/app.js
+      - sed -i 's/localhost/'$MONGO_URL'/' app.js
   
 artifacts:
   files:
